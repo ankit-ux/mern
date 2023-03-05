@@ -6,7 +6,7 @@ const port = 8080;
 
 const requestListener = function (req, res) {
 
-  fs.readFile('demo.html', function(err, data) {
+  fs.readFile('/cloudclusters/mern/demo.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write(data);
     return res.end();
